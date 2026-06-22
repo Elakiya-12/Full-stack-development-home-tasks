@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Table</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+th{
+    background: #ff6b6b;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    padding: 10px;
+}
+
+tr:nth-child(odd){
+    background: #ffe66d;
+}
+
+tr:nth-child(even){
+    background: #4ecdc4;
+    color: white;
+}
+
+tr:hover{
+    background: #6a4c93;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>City</th>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Priya</td>
+        <td>AI</td>
+        <td>Chennai</td>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Rahul</td>
+        <td>CSE</td>
+        <td>Coimbatore</td>
+    </tr>
+
+    <tr>
+        <td>103</td>
+        <td>Anjali</td>
+        <td>IT</td>
+        <td>Madurai</td>
+    </tr>
+
+    <tr>
+        <td>104</td>
+        <td>Karthik</td>
+        <td>ECE</td>
+        <td>Trichy</td>
+    </tr>
+</table>
+
+</body>
+</html>
