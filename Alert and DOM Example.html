@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Demo</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background-color:#f4f6f9;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background-color:white;
+            padding:30px;
+            width:400px;
+            text-align:center;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        #message{
+            font-size:18px;
+            color:#555;
+            margin-bottom:25px;
+        }
+
+        button{
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:15px;
+            margin:5px;
+            transition:0.3s;
+        }
+
+        .alert-btn{
+            background-color:#007bff;
+            color:white;
+        }
+
+        .change-btn{
+            background-color:#28a745;
+            color:white;
+        }
+
+        button:hover{
+            opacity:0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>JavaScript Demo</h2>
+
+        <p id="message">Welcome to JavaScript!</p>
+
+        <button class="alert-btn" onclick="showAlert()">
+            Show Alert
+        </button>
+
+        <button class="change-btn" onclick="changeText()">
+            Change Text
+        </button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Button Clicked Successfully!");
+        }
+
+        function changeText() {
+            document.getElementById("message").textContent =
+            "Text Changed Successfully!";
+        }
+    </script>
+
+</body>
+</html>
