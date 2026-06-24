@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener and Validation</title>
+</head>
+<body>
+
+<h2>Text Input Validation</h2>
+
+<input type="text" id="username" placeholder="Enter your name">
+<button id="btn">Submit</button>
+
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+    
+    let name = document.getElementById("username").value;
+
+    if (name == "") {
+        alert("Text field cannot be empty!");
+    } else {
+        alert("Valid Input: " + name);
+    }
+
+});
+</script>
+
+</body>
+</html>
